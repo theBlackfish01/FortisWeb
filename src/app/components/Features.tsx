@@ -54,7 +54,7 @@ export default function Features() {
     const current = features[index];
 
     return (
-        <section id="features" className="py-20 sm:py-28">
+        <section id="features" className="py-20 sm:py-28 flex flex-col items-center justify-center bg-white/20 backdrop-blur-lg">
             <div className="container mx-auto max-w-7xl px-4">
                 {/* Header */}
                 <div className="max-w-2xl mb-12">

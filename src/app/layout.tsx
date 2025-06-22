@@ -3,6 +3,7 @@ import "./globals.css";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google"
 import NavBar from "@/src/app/components/NavBar";
 import Footer from "@/src/app/components/Footer";
+import Newsletter from "@/src/app/components/Newsletter";
 
 const albertSans = Albert_Sans({
     subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
         >
         <NavBar/>
         {children}
+        <Newsletter/>
         <Footer/>
         </body>
         </html>
