@@ -58,7 +58,7 @@ export default function Newsletter() {
     const formAction = "https://example.us1.list-manage.com/subscribe/post?u=dummy&id=dummy";
 
     return (
-        <section className="relative w-full overflow-hidden rounded-lg border border-gray-200 bg-white p-8 shadow-sm">
+        <section className="relative w-full overflow-hidden  border border-gray-200 bg-white p-8 shadow-sm">
             {/* Decorative backdrop gradient */}
             <div
                 className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-blue-50 via-white to-white"

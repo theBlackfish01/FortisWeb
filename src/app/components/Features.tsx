@@ -8,7 +8,6 @@ import {
     BellRing,
     MonitorSmartphone,
 } from 'lucide-react';
-import Temp from '@/public/temp.jpg';
 
 // ────────────────────────────────────────────────────────────────────────────────
 // Update: darker typography, indigo accent (removed teal), and subtle UI polish.
@@ -54,14 +53,14 @@ export default function Features() {
     const current = features[index];
 
     return (
-        <section id="features" className="py-20 sm:py-28 flex flex-col items-center justify-center bg-white/20 backdrop-blur-lg">
+        <section id="features" className="py-20 sm:py-28 flex flex-col items-center justify-center bg-black ">
             <div className="container mx-auto max-w-7xl px-4">
                 {/* Header */}
                 <div className="max-w-2xl mb-12">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 ">
+                    <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white ">
                         Product Features
                     </h2>
-                    <p className="mt-4 text-lg sm:text-xl text-gray-800 ">
+                    <p className="mt-4 text-lg sm:text-xl text-white ">
                         Fortis Aegis blends cutting-edge AI with bank-grade security to give you complete
                         confidence in every investment decision.
                     </p>
@@ -77,7 +76,7 @@ export default function Features() {
                 ${
                                 i === index
                                     ? 'bg-white text-white border-dark-500'
-                                    : 'border-gray-300 text-gray-800 hover:bg-gray-100 dark:border-gray-700 '
+                                    : 'border-gray-300 text-white hover:bg-gray-100 dark:border-gray-700 '
                             }`}
                         >
                             {f.title}
@@ -101,10 +100,10 @@ export default function Features() {
                         className="w-full rounded-xl shadow-xl hidden dark:block"
                     />
 
-                    <h3 className="mt-6 text-xl font-semibold text-gray-900 ">
+                    <h3 className="mt-6 text-xl font-semibold text-white ">
                         {current.title}
                     </h3>
-                    <p className="mt-3 text-gray-800 ">
+                    <p className="mt-3 text-white">
                         {current.description}
                     </p>
                 </div>
@@ -123,8 +122,8 @@ export default function Features() {
                                     className={`group w-full text-left px-5 py-4 rounded-lg border transition backdrop-blur-lg focus:outline-none focus:ring-2 
                     ${
                                         selected
-                                            ? 'border-black bg-indigo-50 dark:bg-white/30'
-                                            : 'border-transparent hover:bg-gray-50 dark:hover:bg-gray-800/30'
+                                            ? 'border-black bg-indigo-50 dark:bg-white'
+                                            : 'border-transparent hover:bg-gray-50 dark:hover:bg-gray-800/30 text-white '
                                     }`}
                                 >
                                     <div className="flex items-start gap-4">
@@ -136,12 +135,16 @@ export default function Features() {
                                                 className={`font-semibold ${
                                                     selected
                                                         ? 'text-gray-900 '
-                                                        : 'text-gray-800 '
+                                                        : 'text-white '
                                                 }`}
                                             >
                                                 {f.title}
                                             </h4>
-                                            <p className="mt-1 text-sm text-gray-800 ">
+                                            <p
+                                                className={`mt-1 text-sm ${
+                                                    selected ? 'text-gray-900' : 'text-white'
+                                                }`}
+                                            >
                                                 {f.description}
                                             </p>
                                         </div>
