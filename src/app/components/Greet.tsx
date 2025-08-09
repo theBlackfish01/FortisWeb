@@ -1,6 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-import HomeImage from "@/public/temp.jpg";
 import GradientText from "@/src/app/components/GradientText";
 
 export default function Greet() {

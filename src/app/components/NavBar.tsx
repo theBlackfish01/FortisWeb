@@ -21,6 +21,7 @@ export default function NavBar() {
     const links: NavLink[] = [
         { href: '/', label: 'Home', icon: <Home className="w-5 h-5" /> },
         { href: '/aegis', label: 'Fortis Aegis', icon: <Shield className="w-5 h-5" /> },
+        { href: '/products', label: 'Products', icon: <Info className="w-5 h-5" /> },
         { href: '/about', label: 'About', icon: <Info className="w-5 h-5" /> },
     ];
 

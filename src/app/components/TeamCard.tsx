@@ -2,12 +2,13 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
+import temp from "@/public/team_placeholder.png";
 
 interface Member {
     name: string;
     role: string;
-    image: string;
+    image: StaticImageData | string;
     bio?: string;
 }
 
@@ -16,19 +17,19 @@ const members: Member[] = [
     {
         name: "Wadood",
         role: "Co‑Founder / Lead Engineer",
-        image: "/images/team/temp.jpg",
+        image: temp,
         bio: "Architects the Fortis Aegis engine and oversees all things code.",
     },
     {
         name: "Waleed",
         role: "Co‑Founder / Product Designer",
-        image: "/images/team/temp.jpg",
+        image: temp,
         bio: "Shapes the product experience and brand identity—pixel by pixel.",
     },
     {
         name: "Moeez",
         role: "Co‑Founder / Full‑Stack Developer",
-        image: "/images/team/temp.jpg",
+        image: temp,
         bio: "Turns lofty ideas into robust, scalable features across the stack.",
     },
 ];
