@@ -1,6 +1,6 @@
 // /src/app/components/CareersSection.tsx
 import Link from "next/link";
-import {Briefcase, Mail, Code2, LineChart, Palette} from "lucide-react";
+import {Briefcase, Mail} from "lucide-react";
 
 function Dept({
                   title,
