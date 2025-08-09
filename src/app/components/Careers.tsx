@@ -1,6 +1,6 @@
 // /src/app/components/CareersSection.tsx
 import Link from "next/link";
-import { Briefcase, Mail, Code2, LineChart, Palette } from "lucide-react";
+import {Briefcase, Mail, Code2, LineChart, Palette} from "lucide-react";
 
 function Dept({
                   title,
@@ -39,8 +39,9 @@ export default function Careers() {
             <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
                 {/* HERO */}
                 <div className="mx-auto max-w-3xl text-center">
-                    <div className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-medium text-neutral-600">
-                        <Briefcase className="h-4 w-4" aria-hidden />
+                    <div
+                        className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-xs font-medium text-neutral-600">
+                        <Briefcase className="h-4 w-4" aria-hidden/>
                         Careers at Fortis Capital
                     </div>
                     <h1 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight text-neutral-900">
@@ -61,7 +62,7 @@ export default function Careers() {
                             href="mailto:careers@example.com"
                             className="inline-flex items-center gap-2 rounded-xl bg-neutral-900 text-white px-4 py-2 text-sm font-semibold hover:bg-neutral-800"
                         >
-                            <Mail className="h-4 w-4" />
+                            <Mail className="h-4 w-4"/>
                             Say hello
                         </a>
                     </div>
@@ -71,9 +72,9 @@ export default function Careers() {
                 <div className="mt-14">
                     <h2 className="text-lg font-semibold text-neutral-900">Teams we’ll hire for</h2>
                     <div className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                        <Dept title="Engineering" tags={["Full-stack", "Infra", "Frontend"]} />
-                        <Dept title="Research" tags={["Time-series ML", "NLP", "Backtesting"]} />
-                        <Dept title="Product & Design" tags={["Product", "UX", "Design systems"]} />
+                        <Dept title="Engineering" tags={["Full-stack", "Infra", "Frontend"]}/>
+                        <Dept title="Research" tags={["Time-series ML", "NLP", "Backtesting"]}/>
+                        <Dept title="Product & Design" tags={["Product", "UX", "Design systems"]}/>
                     </div>
                 </div>
 
