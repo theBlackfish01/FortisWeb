@@ -12,11 +12,10 @@ interface Member {
     bio?: string;
 }
 
-// Replace the placeholder images & copy below with real team data
 const members: Member[] = [
     {
         name: "Waleed",
-        role: "Founder / Quantitative Enginner",
+        role: "Co-Founder / Quantitative Enginner",
         image: temp,
         bio: "Shapes the quantitative models and brand identity.",
     },
