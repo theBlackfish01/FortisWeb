@@ -12,7 +12,7 @@ export default function Home() {
                 enableMouseInteraction={true}
             />
         </div>
-          <div style={{ width: '100%', height: '100vh' }} className="flex flex-col items-center justify-center "><Greet/></div>
+          <div style={{ width: '100%', height: '100vh' }} className="flex flex-col items-center justify-center bg-transparent"><Greet/></div>
         <CompanyOverview/>
       </main>
   );
