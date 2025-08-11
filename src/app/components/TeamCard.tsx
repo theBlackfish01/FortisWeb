@@ -15,16 +15,16 @@ interface Member {
 // Replace the placeholder images & copy below with real team data
 const members: Member[] = [
     {
+        name: "Waleed",
+        role: "Founder / Quantitative Enginner",
+        image: temp,
+        bio: "Shapes the quantitative models and brand identity.",
+    },
+    {
         name: "Wadood",
         role: "Co‑Founder / Lead Engineer",
         image: temp,
         bio: "Architects the Fortis Aegis engine and oversees all things code.",
-    },
-    {
-        name: "Waleed",
-        role: "Co‑Founder / Product Designer",
-        image: temp,
-        bio: "Shapes the product experience and brand identity—pixel by pixel.",
     },
     {
         name: "Moeez",
